@@ -1,0 +1,23 @@
+[package]
+name = "ssd1322-zjy128x64"
+version = "0.1.0"
+edition = "2024"
+authors = ["Chen Zhengyang<fmaj7@foxmail.com>"]
+description = "A driver for Zhongjingyuan SSD1322 OLED with 256x64 physical / 128x64 logical pixels"
+license = "MIT"
+repository = "https://github.com/ZhengyangChen/ssd1322-zjy128x64"
+readme = "README.md"
+categories = ["embedded", "no-std", "hardware-support"]
+keywords = ["ssd1322", "oled", "embedded-graphics", "zjy"]
+documentation = "https://docs.rs/ssd1322-zjy128x64"
+
+[dependencies]
+embedded-graphics = "0.8.1"
+embedded-hal = "1.0.0"
+
+[dev-dependencies]
+rppal = { version = "0.22.1", features = ["embedded-hal"] }
+
+[[example]]
+name = "rppal"
+path = "examples/rppal.rs"
